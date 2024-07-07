@@ -1,0 +1,26 @@
+<div class="container mt-5">
+  <div class="card shadow p-4">
+    <h1 class="mb-4 text-center">Monty Hall Simulation</h1>
+
+    <div class="form-group">
+      <label for="simulations" class="form-label">Number of Simulations:</label>
+      <input type="number" id="simulations" class="form-control" [(ngModel)]="numberOfSimulations">
+    </div>
+
+    <div class="form-check form-switch my-3">
+      <input class="form-check-input" type="checkbox" id="changeDoor" [(ngModel)]="changeDoor">
+      <label class="form-check-label" for="changeDoor">Change Door</label>
+    </div>
+
+    <button class="btn btn-primary w-100" (click)="startSimulation()">Start Simulation</button>
+
+    <div *ngIf="results" class="mt-4">
+      <div class="alert alert-info" role="alert">
+        <p>Wins: {{ results.wins }}</p>
+        <p>Losses: {{ results.losses }}</p>
+        <p>Total Simulations: {{ results.total }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>

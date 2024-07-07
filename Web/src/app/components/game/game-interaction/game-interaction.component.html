@@ -1,0 +1,53 @@
+<div class="container mt-5 game-container text-center">
+    <h1 class="mb-4">Monty Hall Game</h1>
+  
+    <button *ngIf="!gameId" class="btn btn-primary" (click)="startGame()">Start Game</button>
+  
+    <div *ngIf="gameId" class="row justify-content-center game-panel">
+      <div class="col-3 door m-2" [ngClass]="{'selected': pickedDoor === 0}" (click)="pickDoor(0)">
+        <span class="door-number">Door 1</span>
+        <div *ngIf="pickedDoor !== null && pickedDoor === 0" class="selected-indicator">Selected</div>
+        <div *ngIf="revealedGoatDoor !== null && revealedGoatDoor === 0" class="goat">Goat</div>
+        <div *ngIf="carDoor !== null && carDoor === 0" class="goat">Car</div>
+      </div>
+  
+      <div class="col-3 door m-2" [ngClass]="{'selected': pickedDoor === 1}" (click)="pickDoor(1)">
+        <span class="door-number">Door 2</span>
+        <div *ngIf="pickedDoor !== null && pickedDoor === 1" class="selected-indicator">Selected</div>
+        <div *ngIf="revealedGoatDoor !== null && revealedGoatDoor === 1" class="goat">Goat</div>
+        <div *ngIf="carDoor !== null && carDoor === 1" class="goat">Car</div>
+      </div>
+  
+      <div class="col-3 door m-2" [ngClass]="{'selected': pickedDoor === 2}" (click)="pickDoor(2)">
+        <span class="door-number">Door 3</span>
+        <div *ngIf="pickedDoor !== null && pickedDoor === 2" class="selected-indicator">Selected</div>
+        <div *ngIf="revealedGoatDoor !== null && revealedGoatDoor === 2" class="goat">Goat</div>
+        <div *ngIf="carDoor !== null && carDoor === 2" class="goat">Car</div>
+      </div>
+    </div>
+  <div *ngIf="!gameResult">
+    <div *ngIf="pickedDoor !== null && revealedGoatDoor !== null" class="mt-4">
+        <div class="form-check form-switch d-inline-block">
+          <input class="form-check-input" type="checkbox" id="switch" [(ngModel)]="switch">
+          <label class="form-check-label" for="switch">Switch Door</label>
+        </div>
+        <br />
+        <button class="btn btn-success ml-3" (click)="makeFinalChoice()">Make Final Choice</button>
+      </div>
+  </div>
+   
+    <div *ngIf="gameResult" class="result mt-4">
+      <p *ngIf="gameResult === 'win'" class="alert alert-success text-center ">
+        <i class="fas fa-car"></i> Congratulations! You won the car!
+      </p>
+      <p *ngIf="gameResult === 'lost'" class="alert alert-danger text-center ">
+        <i class="fas fa-goat"></i> Sorry! You lost. Better luck next time!
+      </p>
+    </div>
+  
+    <div *ngIf="gameResult" class="result mt-4">
+      <button *ngIf="gameId" class="btn btn-secondary mt-3" (click)="resetGame()">Play Again</button>
+    </div>
+  </div>
+  <router-outlet></router-outlet>
+  

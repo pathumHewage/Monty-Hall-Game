@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33103.184
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MontyHallApi", "MontyHallApi\MontyHallApi.csproj", "{1ED21A5C-C220-42D3-B969-78E1164C80BB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1ED21A5C-C220-42D3-B969-78E1164C80BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1ED21A5C-C220-42D3-B969-78E1164C80BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1ED21A5C-C220-42D3-B969-78E1164C80BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1ED21A5C-C220-42D3-B969-78E1164C80BB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D5C3B417-1A23-44A9-9695-8A768245B499}
+	EndGlobalSection
+EndGlobal

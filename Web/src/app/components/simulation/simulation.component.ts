@@ -15,7 +15,6 @@ export class SimulationComponent {
   constructor(private simulationService: SimulationService) { }
 
   startSimulation() {
-    debugger;
     this.simulationService.simulate(this.numberOfSimulations, this.changeDoor)
       .subscribe(data => {
         console.log(data);

@@ -1,0 +1,106 @@
+.container {
+    max-width: 600px;
+  }
+  
+  .card {
+    border-radius: 15px;
+    background-color: #f9f9f9;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .form-check-label {
+    margin-left: 0.5rem;
+  }
+  
+  .alert {
+    text-align: left;
+    margin-top: 20px;
+  }
+  
+  button {
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  
+  .game-container {
+    padding: 20px;
+  }
+  
+  .game-panel {
+    margin-top: 20px;
+  }
+  
+  .door {
+    width: 100px;
+    height: 150px;
+    border: 2px solid #333;
+    background-color: #ccc;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s;
+  }
+  
+  .door:hover {
+    background-color: #eee;
+  }
+  
+  .door .door-number {
+    font-weight: bold;
+  }
+  
+  .selected-indicator {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #7FFF00;
+    color: #333;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 10px;
+  }
+  
+  .goat {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    background-color: #FF6347;
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 10px;
+  }
+  
+  .result {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  
+  .fa-car, .fa-goat {
+    margin-right: 8px;
+  }
+  .text-center {
+    text-align: center;
+  }

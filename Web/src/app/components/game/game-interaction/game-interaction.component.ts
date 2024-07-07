@@ -27,7 +27,6 @@ export class GameInteractionComponent {
 
   pickDoor(door: number) {
     if (!this.gameId) return;
-
     this.simulationService.pickDoor(this.gameId, door).subscribe(data => {
       this.pickedDoor = door;
       this.revealedGoatDoor = data.revealedGoatDoor;

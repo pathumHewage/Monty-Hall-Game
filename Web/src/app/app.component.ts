@@ -9,11 +9,5 @@ export class AppComponent {
   constructor(private router: Router) {}
   title = 'MontyHallApp';
 
-  playGame() {
-    this.router.navigate(['/play-game']); // Navigate to '/play-game' route
-  }
 
-  startSimulation() {
-    this.router.navigate(['/simulation']); // Navigate to '/simulation' route
-  }
 }

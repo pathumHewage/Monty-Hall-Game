@@ -3,9 +3,10 @@ import { RouterModule, Routes } from '@angular/router';
 import { SimulationComponent } from './components/simulation/simulation.component';
 import { GameInteractionComponent } from './components/game-interaction/game-interaction.component';
 import { AppComponent } from './app.component';
+import { HomeComponent } from './components/home/home.component';
 
 const routes: Routes = [
-  { path: '', component: AppComponent }, // Default route
+  { path: '', component: HomeComponent },
   { path: 'simulation', component: SimulationComponent },
   { path: 'play-game', component: GameInteractionComponent }
 

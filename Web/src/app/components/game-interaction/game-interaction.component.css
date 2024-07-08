@@ -38,7 +38,7 @@
   
   .door {
     width: 100px;
-    height: 150px;
+    height: 210px;
     border: 2px solid #333;
     background-color: #ccc;
     margin: 0 10px;
@@ -49,8 +49,22 @@
     cursor: pointer;
     position: relative;
     transition: background-color 0.3s;
+    overflow: hidden;
   }
-  
+  .door .doorimage {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../../../assets/door.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all 0.5s;
+  }
+  .door.selected .doorimage {
+    left: -100px;
+  }
   .door:hover {
     background-color: #eee;
   }
@@ -74,11 +88,31 @@
     position: absolute;
     bottom: 5px;
     left: 5px;
-    background-color: #FF6347;
     color: #fff;
     padding: 5px;
     border-radius: 3px;
     font-size: 10px;
+    background-image: url('../../../../assets/goat.png');
+    width: 87px;
+    height: 198px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .car {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 10px;
+    background-image: url('../../../../assets/car.png');
+    width: 87px;
+    height: 198px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
   
   .result {

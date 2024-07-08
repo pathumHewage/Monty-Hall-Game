@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33103.184
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MontyHallApi", "MontyHallApi\MontyHallApi.csproj", "{1ED21A5C-C220-42D3-B969-78E1164C80BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MontyHallApi", "MontyHallApi\MontyHallApi.csproj", "{1ED21A5C-C220-42D3-B969-78E1164C80BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MontyHallApi.Tests", "MontyHallApi.Tests\MontyHallApi.Tests.csproj", "{74673675-901B-481C-ABCA-4E4652D56F2B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{1ED21A5C-C220-42D3-B969-78E1164C80BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1ED21A5C-C220-42D3-B969-78E1164C80BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1ED21A5C-C220-42D3-B969-78E1164C80BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74673675-901B-481C-ABCA-4E4652D56F2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74673675-901B-481C-ABCA-4E4652D56F2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74673675-901B-481C-ABCA-4E4652D56F2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74673675-901B-481C-ABCA-4E4652D56F2B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

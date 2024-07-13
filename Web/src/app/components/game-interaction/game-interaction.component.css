@@ -56,7 +56,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../../../../assets/door.png');
+    background-image: url('../../../assets/door.png');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -92,7 +92,7 @@
     padding: 5px;
     border-radius: 3px;
     font-size: 10px;
-    background-image: url('../../../../assets/goat.png');
+    background-image: url('../../../assets/goat.png');
     width: 87px;
     height: 198px;
     background-position: center;
@@ -107,7 +107,7 @@
     padding: 5px;
     border-radius: 3px;
     font-size: 10px;
-    background-image: url('../../../../assets/car.png');
+    background-image: url('../../../assets/car.png');
     width: 87px;
     height: 198px;
     background-position: center;

@@ -14,4 +14,11 @@ The Monty Hall Game is a probability puzzle based on a TV game show scenario. In
 
 To play the Monty Hall Game, clone the repository and run the game.
 
+![1](https://github.com/user-attachments/assets/fb4cca1b-5f3f-4c34-bed3-49e023059c5e)
+![2](https://github.com/user-attachments/assets/adb20ee6-87c0-4c21-b8dd-e664115be512)
+![3](https://github.com/user-attachments/assets/92b75c16-5b0e-46e9-a699-7a05cc171e39)
+![4](https://github.com/user-attachments/assets/12a289e9-fe3c-46b0-b03a-e3fd915004a5)
+
+
+
 
